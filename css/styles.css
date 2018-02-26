@@ -71,6 +71,7 @@ input:not([type=radio]):not([type=checkbox]) {
   height: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
+  border-radius: 8px;
 }
 
 h2,
@@ -117,12 +118,13 @@ select {
 
 #comment {
   text-align: left;
+  border-radius: 8px;
 }
 
 input:focus,
 textarea:focus,
 select:focus {
-  border: 2px solid orchid;
+  border: 3px solid orchid;
 }
 
 textarea {
@@ -148,16 +150,18 @@ input[type=checkbox] {
 }
 
 button {
-  background: orchid;
+  background: linear-gradient(45deg, mistyrose, #DB07D4);
   display: block;
   width: 80%;
   height: 75px;
   margin-left: auto;
   margin-right: auto;
+  border: 5px solid orchid;
   box-shadow: 0 0 10px orchid;
   color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 1.6em;
+  border-radius: 8px;
 }
 
 footer {
@@ -169,5 +173,21 @@ footer {
 /* Media Queries ---------- */
 
 @media(min-width: 768px) {
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.container label {
+  width: 30%;
+}
+
+.container input,
+.container select {
+  width: 70%;
+}
+
 
 }
