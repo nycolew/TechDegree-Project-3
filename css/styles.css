@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  background: orchid;
+  background: linear-gradient(45deg, mistyrose, orchid, mistyrose);
   color: #fff;
   font-family: 'Cinzel', serif;
   margin-top: 0;
@@ -34,16 +34,25 @@ h2 {
   font-size: 1.7em;
 }
 
-.top {
+/*.top {
   border-bottom: 5px solid orchid;
-}
+}*/
 
 main {
   font-family: 'Raleway', sans-serif;
 }
 
-.contact-info {
+.borders {
+  width: 90%;
+  height: 10px;
+  margin-left: auto;
+  margin-right: auto;
   border-top: 2px solid orchid;
+  border-bottom: 5px solid orchid;
+}
+
+.contact-info {
+  /*border-top: 2px solid orchid;*/
   border-bottom: 2px solid orchid;
   margin-top: 1%;
   margin-bottom: 3%;
@@ -52,6 +61,7 @@ main {
 input:not([type=radio]):not([type=checkbox]),
 textarea {
   background: #FCEBF1;
+  transition: all 1s ease;
   display: block;
   width: 85%;
   margin-left: auto;
@@ -125,6 +135,7 @@ input:focus,
 textarea:focus,
 select:focus {
   border: 3px solid orchid;
+  background-color: floralwhite;
 }
 
 textarea {
@@ -170,24 +181,103 @@ footer {
   font-style: italic;
 }
 
-/* Media Queries ---------- */
+/* Media Query ---------- */
 
 @media(min-width: 768px) {
 
   .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-.container label {
-  width: 30%;
-}
+  input:not([type=radio]):not([type=checkbox]) {
+    display: block;
+    /*width: 84%;*/
+    width: 40%;
+    margin-right: 23%;
+  }
 
-.container input,
-.container select {
-  width: 70%;
-}
+  label:not([for=html_news]):not([for=css_news]):not([for=javascript_news]):not([for=html_format]):not([for=plaintext]):not([class=sub]) {
+    display: block;
+    /*margin-left: 0;*/
+    /*width: 14%;*/
+    width: 11%;
+    text-align: left;
+    align-self: center;
+    margin-right: 3%;
+    margin-left: 23%;
+  }
 
+  #zip {
+    width: 20%;
+    margin-left: 0;
+    margin-top: .5%;
+  }
+
+  select {
+    display: block;
+    margin-bottom: 4%;
+    margin-left: 0;
+    margin-top: 2%;
+    margin-right: 23%;
+    width: 40%;
+  }
+
+  legend {
+    margin-left: 25%;
+    margin-bottom: 1%;
+    padding-top: 40px;
+  }
+
+  .borders {
+    width: 40%;
+  }
+
+  .second-border {
+    width: 40%;
+    border: 1px solid orchid;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-info {
+    border: none;
+  }
+
+  textarea {
+    width: 50%;
+  }
+
+  button {
+    width: 50%;
+  }
+
+  input[type=radio],
+  input[type=checkbox] {
+    margin-left: 25%;
+  }
+
+  #first,
+  #second,
+  #third {
+    margin-left: 25%;
+    display: inline;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+
+  #html_news,
+  #html_format,
+  textarea {
+    margin-top: 1.5%;
+  }
+
+  #javascript_news,
+  #plaintext {
+    margin-bottom: 1.5%;
+  }
 
 }
