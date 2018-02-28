@@ -139,7 +139,7 @@ input:focus,
 textarea:focus,
 select:focus {
   background-color: #FCEBF1;
-  border: 3px solid orchid;
+  border: 3px solid #FAA0C0;
   transition: all .5s;
 }
 
@@ -200,15 +200,12 @@ footer {
 
   input:not([type=radio]):not([type=checkbox]) {
     display: block;
-    /*width: 84%;*/
     width: 40%;
     margin-right: 23%;
   }
 
   label:not([for=html_news]):not([for=css_news]):not([for=javascript_news]):not([for=html_format]):not([for=plaintext]):not([class=sub]) {
     display: block;
-    /*margin-left: 0;*/
-    /*width: 14%;*/
     width: 11%;
     text-align: left;
     align-self: center;
