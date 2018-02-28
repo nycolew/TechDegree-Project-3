@@ -34,10 +34,6 @@ h2 {
   font-size: 1.7em;
 }
 
-/*.top {
-  border-bottom: 5px solid orchid;
-}*/
-
 main {
   font-family: 'Raleway', sans-serif;
 }
@@ -52,7 +48,6 @@ main {
 }
 
 .contact-info {
-  /*border-top: 2px solid orchid;*/
   border-bottom: 2px solid orchid;
   margin-top: 1%;
   margin-bottom: 3%;
@@ -61,7 +56,6 @@ main {
 input:not([type=radio]):not([type=checkbox]),
 textarea {
   background: #FCEBF1;
-  transition: all 1s ease;
   display: block;
   width: 85%;
   margin-left: auto;
@@ -94,7 +88,7 @@ p {
 
 legend {
   font-size: 1.5em;
-  font-weight: bold
+  font-weight: bold;
   display: block;
   margin-left: 7%;
   margin-bottom: 3%;
@@ -131,11 +125,22 @@ select {
   border-radius: 8px;
 }
 
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=tel]:hover,
+input[type=number]:hover,
+textarea:hover,
+select:hover {
+  background: #FCCFDF;
+  cursor: pointer;
+}
+
 input:focus,
 textarea:focus,
 select:focus {
+  background-color: #FCEBF1;
   border: 3px solid orchid;
-  background-color: floralwhite;
+  transition: all .5s;
 }
 
 textarea {
